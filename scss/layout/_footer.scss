@@ -1,0 +1,86 @@
+.footer {
+  position: relative;
+  color: #fff;
+  &__top {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3em 40px;
+    display: flex;
+    height: 400px;
+    .contact__us {
+      width: 25%;
+      @media screen and (max-width: 993px) {
+        width: 49%;
+      }
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 25px;
+      }
+      .desc {
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          i {
+            margin-right: 5px;
+          }
+        }
+        .social__network {
+          i {
+            margin: 0 5px;
+          }
+        }
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          line-height: 1;
+          padding: 0.8em 0;
+          &:first-child {
+            padding-top: 0;
+          }
+          a {
+            color: #fff;
+            font-size: 14px;
+            &:hover {
+              color: rgb(146, 131, 131);
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+      .form-group {
+        input {
+          width: 240px;
+          border-radius: 50px;
+          background-color: #b61984;
+          height: 3em;
+          color: #fff;
+        }
+        button {
+          width: 240px;
+          height: 48px;
+          box-shadow: 0 0 0 3em #fff inset;
+          color: #181818;
+          border-radius: 50px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  &__bottom {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    background-image: url(../../images/footer_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+    left: 0%;
+    z-index: -1;
+    padding-top: 3em;
+    color: #fff;
+  }
+}

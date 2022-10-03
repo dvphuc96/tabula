@@ -1,0 +1,10 @@
+@mixin devicePC {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin deviceSP {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
